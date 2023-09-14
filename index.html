@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <title>3era Pre-Entrega </title>
+  </head>
+  <body>
+
+    <h2>Carga de alumnos para el colegio</h2>
+
+    <form id="form">
+      <div class="inputContainer">
+        
+        <label for="name">Nombre y Apellido: </label>
+        <input type="text" name="name" id="name" placeholder="Mariano Jimenez" />
+     
+        <label for="subject">Materia: </label>
+        <select name="subject" id="subject">
+          <option value="Matemática">Matemática</option>
+          <option value="Ingles">Ingles</option>
+          <option value="Programación">Programación</option>
+          <option value="Filosofia">Filosofia</option>
+          <option value="Historia">Historia</option>
+        </select>
+        
+        <label for="note">Nota: </label>
+        <input
+          type="number"
+          name="note"
+          id="note"
+          placeholder="1 a 10"
+          inputmode="decimal"
+        />
+      </div>
+      <input type="submit" id="addButton" value="Agregar"/>
+      
+    </form>
+
+    <div id="contenedor">
+      <table class="small-screen-table">
+        <thead>
+          <tr>
+            <th>Alumno</th>
+            <th>Materia</th>
+            <th>Nota</th>
+          </tr>
+        </thead>
+        <tbody id="studentList">
+        </tbody>
+      </table>
+      <p id="addStudentNote">Cargue alumnos para poder mostrarlos en la tabla</p>
+    </div>
+
+    <script src="index.js"></script>
+    
+  </body>
+</html>
